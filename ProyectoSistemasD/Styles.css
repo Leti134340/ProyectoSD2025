@@ -1,0 +1,256 @@
+body{
+    background-color: #c9d5f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    height: auto;
+    padding: 1% 2%;
+    background-color: #1a47b0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #c9d5f1;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.fila{
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo-header {
+    font-size: 2rem;
+    color: #c9d5f1;
+    align-self: center;
+    margin-left: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+img.logo{
+    width: 8rem;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 1%;
+    padding: 1%;
+    border-radius: 1rem;
+}
+
+img.logo:hover {
+    border-color: #fff;
+    background-color: #06112c;
+    box-shadow: 0px 4px 12px #091b46;
+    transition: all 0.3s ease;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    margin-right: 20px;
+    padding-top: 1%;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #c9d5f1;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+nav a:hover{
+    color: #1a47b0;
+    background-image: url("iconos/flor_azul.png");
+    background-color: #c9d5f1;
+    background-size: 40px 40px; /* tamaño pequeño de la flor */
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: -250%;
+}
+
+.titulo{
+    color: #1a47b0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.ctn1{
+    margin-top: 2.5%;
+    padding: 1.5%;
+    height: auto;
+    border: 1px none black;
+    text-align: center;
+    box-shadow: 0.2rem 0.3rem 0.5rem #6b706b;
+}
+
+.ctn2{
+    margin-top: 2.5%;
+    padding: 1.5%;
+    height: auto;
+    border: 1px none black;
+    text-align: justify;
+}
+
+.texto{
+    color:#091b46;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: 3rem;
+}
+
+.icono{
+    height: auto;
+    width: 2%;
+}
+
+table{
+    border: 0.05rem none #091b46;
+    border-spacing: 0;
+    border: none;
+    width: 50%;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    
+}
+
+th, td{
+    border: 0.05rem solid #091b46;
+    padding: 1.2%;
+    text-align: center;
+}
+
+.sombra{
+    height: auto;
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.sombra table{
+    width: 50%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px #06112c;
+}
+
+thead tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+thead tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+  
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c9d5f1;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    z-index: 5;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #1a47b0;
+    padding: 10px 12px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #c9d5f1;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px); /* ajusta 80px al alto de tu header */
+    padding: 1rem;
+}
+
+.frm1{
+    align-self: center;
+    height: auto;
+    width: 25rem;
+    padding: 3rem;
+    border:#06112c solid 0.12rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0 10px #06112c;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #091b46;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+form input{
+    height: 1.4rem;
+}
+
+form button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #06112c;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    width: 10rem;
+    padding: 0.2rem;
+    border-radius: 0.25rem;
+    align-self: center;
+}
